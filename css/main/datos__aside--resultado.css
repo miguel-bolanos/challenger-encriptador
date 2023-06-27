@@ -1,0 +1,46 @@
+.datos__aside--resultado {
+    
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    
+}
+
+.datos__aside--resultado--textarea{
+    height: 26rem;
+    border-radius: 3% 3% 0 0 ;
+    resize: none;
+    font-size: 1.7rem;
+    font-family: 'Orbit';
+    padding: 1rem;
+    background: rgb(106, 108, 111);
+    color: beige;
+}
+
+.datos__aside--resultado--btncopiar{
+    padding: 1rem 0;
+    border-color: none;
+    border-style: none;
+    cursor: pointer;
+    border-radius: 0 0 2rem 2rem;
+    font-size: 1.2rem;
+    font-family: 'Orbit';
+    font-weight: bold;
+    background: rgb(94, 18, 37);
+    color:rgb(178, 181, 186);
+    
+}
+.datos__aside--resultado--btncopiar:hover {
+    background: rgb(141, 142, 146);
+    color:rgb(94, 18, 37);
+    transition: all 1s ease-in-out;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .datos__aside--resultado {
+        width: 95%;
+        height: 15rem;
+    }
+    
+}

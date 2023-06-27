@@ -1,0 +1,101 @@
+.datos__encriptar{
+
+    display: flex;
+    height: 34rem;
+    padding: 0 3rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.datos__caja--text {
+    width: 55%;
+    margin-bottom: 2rem;
+}
+.datos__textarea{
+    height: 25rem;
+    width: 95%;
+    resize: none;
+    border-radius: 3%;
+    padding: 1rem;
+    font-size: 1.7rem;
+    font-family: 'Orbit';
+    background: rgb(106, 108, 111);
+    color: beige;
+}
+
+.datos__textarea::placeholder {
+    color: rgb(94, 18, 37);
+}
+.datos__advertencia {
+    color: beige;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    
+    
+}
+.datos__advertencia span{
+    
+    margin-right: 0.5rem;
+    
+}
+.datos__botones {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+    width: 100%;
+    
+}
+
+.datos__botones .datos__botones--btnencriptar , .datos__botones--btndesencriptar{
+    width: 50%;
+    padding: 1rem 0;
+    border-color: none;
+    border-style: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-family: 'Orbit';
+    font-weight: bold;
+    background: rgb(142, 145, 149);
+    color: rgb(94, 18, 37);
+}
+
+.datos__botones .datos__botones--btnencriptar:hover , .datos__botones--btndesencriptar:hover{
+    background: rgb(94, 18, 37);
+    color: rgb(142, 145, 149);
+    transition: all 1s ease-in-out;
+}
+
+.datos__botones .datos__botones--btnencriptar{
+    border-radius: 2rem 0 0 2rem;
+    border-right: 1px solid rgb(106, 108, 111);
+    
+
+
+}
+
+.datos__botones .datos__botones--btndesencriptar{
+    border-radius: 0 2rem  2rem 0;
+    
+}
+
+@media only screen and (max-width: 600px) {
+    .datos__encriptar {
+        display: block;
+        padding: 0 1rem;
+    }
+    .datos__caja--text {
+        width: 90%;
+    }
+    .datos__botones {
+        width: 110%;
+    }
+    .datos__textarea{
+        height: 14rem;
+    }
+    .datos__encriptar {
+        height: 100%;
+    }
+
+
+}

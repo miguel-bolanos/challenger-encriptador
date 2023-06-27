@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <script type="text/javascript" src="encriptar.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&family=Oswald:wght@400;600&family=Roboto+Mono:wght@300;500&family=Orbit&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main/datos.css">
+    <link rel="stylesheet" href="css/main/datos__aside.css">
+    <link rel="stylesheet" href="css/main/datos__aside--resultado.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://kit.fontawesome.com/ad6c75e2e5.js" crossorigin="anonymous"></script>
+    <meta name="Conetido" content="Challenger - Encriptador del programa Oracle ONE Nex Education con Alura Latam realizado por miguel angel bolaños Mendez">
+    
+</head>
+<body>
+    <header>
+        <img  class="logo" src="img/icono alura.png" alt="">
+        <h1 class="logo__texto">Encriptador Alura - ONE Oracle Next Education</h1>
+        <img  class="logo__one" src="img/ONE_logo_blanco.png" alt="">
+        
+    </header>
+
+
+    <main>
+        <section class="datos__encriptar">
+            
+            <div class="datos__caja--text">
+                
+                <textarea class="datos__textarea" name="textarea" id="texto" id="texto_ingresar" placeholder="Escribe aqui tu texto..."></textarea>
+                
+                <h1 class="datos__advertencia" ><span class="material-symbols-outlined"> error </span>Escribir sin Mayusculas ni Tildes</h1>
+                <div class="datos__botones">
+                    <input class="datos__botones--btnencriptar" type="button" id="btnencriptar" value="Encriptar">
+                    <input class="datos__botones--btndesencriptar" type="button" id="btndesencriptar" value="Desencriptar">
+                </div>
+            </div>
+            <aside id="prueba" class="datos__aside " >
+                <img class="datos__aside--logo" src="img/chicago-bulls-logo.png" alt="">
+                <h1 class="datos__aside--titulo">Ningún mensaje fue encontrado</h1>
+                <H2 class="datos__aside--descripcion">Ingresa el texto que desees encriptar o desencriptar.</H2>
+            </aside>
+            <aside id="prueba1" class="datos__aside--resultado hidden">
+                
+                <textarea name="resultado" id="resultado" class="datos__aside--resultado--textarea" cols="30" rows="10" ></textarea>
+                <input class="datos__aside--resultado--btncopiar" type="button" id="btncopiar" value="Copiar">
+            </aside>
+        </section>
+
+        <footer class="footer">
+            
+            <i class="fa-brands fa-square-github footer__icono" ></i>
+            <h1 class="footer__texto">Creado por <strong>Miguel Angel Bolaños Mendez</strong> </br> <span>- Challenge Encriptador</span></h1>
+            <i class="fa-brands fa-linkedin footer__icono"></i>
+        </footer>
+        
+        
+    </main>
+
+    
+    <script>
+       
+        var btn = document.querySelector("#btnencriptar");
+        btn.onclick=encriptar;
+
+        var btn2 = document.querySelector("#btndesencriptar");
+        btn2.onclick=desencriptar;
+
+
+        var btn3 = document.querySelector("#btncopiar");
+        btn3.onclick=copiar;
+
+        var btn4 = document.querySelector("#texto_ingresar");
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,35 @@
+body {
+    background: rgb(70, 71, 73);
+}
+header{
+    height: 5rem;
+    background: rgb(94, 18, 37);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Orbit';
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: beige;
+    margin-bottom: 2rem;
+}
+
+header .logo {
+    width: 5rem;
+}
+.logo__texto {
+    text-align: center;
+} 
+header .logo__one {
+    width: 7rem;
+}
+
+@media only screen and (max-width: 600px) {
+    header .logo__one {
+        display: none;
+        
+    }
+    .logo__texto {
+        font-size: 1rem;
+    }
+}
